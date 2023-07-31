@@ -120,8 +120,7 @@ function App() {
   useEffect(() => {
 
     const uniqueLetters = [...new Set(pickedWordLetters)];
-    console.log(uniqueLetters.length);
-    console.log(pickedWordLetters.length);
+
     // Win condition
     if (guessedLetters.length === uniqueLetters.length) {
       // Add 100 points to the score
